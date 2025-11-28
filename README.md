@@ -2,7 +2,7 @@
 This project implements a Leader Drone Control System using DroneKit–Python and Firebase Realtime Database.
 
 Features
-📡 Real-Time Firebase Sync
+1) Real-Time Firebase Sync
 
 Leader drone continuously uploads:
 
@@ -14,7 +14,7 @@ Altitude
 
 Stored in /Leader_Location in the Firebase database.
 
-🎮 Remote Command Execution
+2) Remote Command Execution
 
 Listen for commands in /Leader_Control:
 
@@ -24,7 +24,7 @@ Listen for commands in /Leader_Control:
 
 (latitude, longitude) → Navigate to a waypoint
 
-✈️ Autonomous Navigation
+3) Autonomous Navigation
 
 Uses DroneKit simple_goto()
 
@@ -32,13 +32,14 @@ Uses Haversine distance to validate arrival
 
 Supports SITL (Software-In-The-Loop) and real Pixhawk hardware
 
-🧵 Multi-Threading
+4) Multi-Threading
 
 Two threads run in parallel:
 
 Location Upload Thread
 
-Firebase Setup Guide
+
+# Firebase Setup Guide
 
 Follow these steps to correctly connect your drone code to Firebase:
 
